@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Garage Door Opener</title>
+<script>
+
+    function toggleLED() {
+        var xmlHttp = new XMLHttpRequest();
+        xmlHttp.open( "GET", "/toggle", false );
+        xmlHttp.send( null );
+    }
+        
+</script>
+</head>
+<body>
+    <h1>Wifi Garage Door Opener by mageos</h1>
+    <p>
+        This garage door opener uses an ESP8266 to connect to a home wifi network and provide ....
+    </p>
+    <p>
+        <input type="button"value="Toggle LED" onclick="toggleLED()" >
+    </p>
+</body>
+</html>
